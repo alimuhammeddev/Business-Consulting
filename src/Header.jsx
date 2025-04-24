@@ -9,7 +9,7 @@ const Header = () => {
   const navLinks = ['Industries', 'BookKeeping', 'Tax Services', 'Business Managment', 'Resources']
 
   return (
-    <header className="bg-white shadow-md fixed w-full z-50">
+    <header className="bg-white shadow-md fixed w-full z-[999]">
       <div className="max-w-7xl mx-auto px-4 py-3 relative flex justify-between items-center">
         {/* Logo */}
         <div className="flex-shrink-0">

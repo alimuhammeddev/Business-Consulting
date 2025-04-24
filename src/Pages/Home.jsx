@@ -5,7 +5,7 @@ import { header1 } from "../assets";
 const Home = () => {
   return (
     <section className="relative w-full">
-      <div className="absolute top-0 left-0 w-full z-10">
+      <div className="absolute top-0 left-0 w-full z-[999]">
         <Header />
       </div>
 
@@ -25,9 +25,9 @@ const Home = () => {
 
         {/* Text content on top */}
         <div className="absolute inset-0 flex items-center justify-center text-center z-20 p-4">
-          <h1 className="text-white text-2xl md:text-6xl font-bold text-[#176FB9] mt-28">
+          <h1 className="text-2xl md:text-6xl font-bold text-[#176FB9] mt-28">
             Small Business <br /> Reporting Solutions
-            <p className="text-base md:text-2xl text-white font-normal">
+            <p className="text-base md:text-2xl text-white font-normal lg:mt-5">
               Entertainers, founders and entrepreneurs like you choose
               Business <br className="lg:block hidden" /> Consulting because we understand your world
               and the complexity of <br className="lg:block hidden" /> small business reporting in
