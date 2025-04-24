@@ -28,7 +28,7 @@ const Home = () => {
         <div className="absolute inset-0 flex items-center justify-center text-center z-20 p-4">
           <h1 className="text-2xl md:text-6xl font-bold text-[#176FB9] mt-28">
             Small Business <br /> Reporting Solutions
-            <p className="text-lg md:text-2xl text-white font-normal lg:mt-5">
+            <p className="text-base md:text-2xl text-white font-normal lg:mt-5">
               Entertainers, founders and entrepreneurs like you choose Business{" "}
               <br className="lg:block hidden" /> Consulting because we
               understand your world and the complexity of{" "}
