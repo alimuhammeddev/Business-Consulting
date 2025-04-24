@@ -24,10 +24,10 @@ const Home = () => {
         </div>
 
         {/* Text content on top */}
-        <div className="absolute inset-0 flex items-center justify-center text-center z-20">
+        <div className="absolute inset-0 flex items-center justify-center text-center z-20 p-4">
           <h1 className="text-white text-2xl md:text-6xl font-bold text-[#176FB9] mt-28">
             Small Business <br /> Reporting Solutions
-            <p className="text-lg md:text-2xl mt-4 text-white font-normal">
+            <p className="text-lg md:text-2xl text-white font-normal">
               Entertainers, founders and entrepreneurs like you choose
               Business <br className="lg:block hidden" /> Consulting because we understand your world
               and the complexity of <br className="lg:block hidden" /> small business reporting in
