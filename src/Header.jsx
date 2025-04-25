@@ -1,57 +1,60 @@
-import React, { useState } from 'react'
-import { ArrowDown, ChevronDown, Menu, X } from 'lucide-react'
-import { logo } from './assets'
+import React, { useState } from "react";
+import { ChevronDown, Menu, X } from "lucide-react";
+import { logo } from "./assets";
+import { Link } from "react-router-dom";
 
 const Header = () => {
-  const [open, setOpen] = useState(false)
-  const [activeDropdown, setActiveDropdown] = useState(null)
-  const toggleMenu = () => setOpen(!open)
+  const [open, setOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null);
+  const toggleMenu = () => setOpen(!open);
 
   const navLinks = [
-    { 
-      name: 'Industries', 
-      hasDropdown: true, 
+    {
+      name: "Industries",
+      hasDropdown: true,
       dropdownLinks: [
-        { name: 'Real Estate', url: '#industries-option1' },
-        { name: 'Entertainers', url: '#industries-option2' },
-        { name: 'Influencers', url: '#industries-option3' }
-      ]
+        { name: "Real Estate", url: "/real-estate" },
+        { name: "Entertainers", url: "#industries-option2" },
+        { name: "Influencers", url: "#industries-option3" },
+      ],
     },
-    { 
-      name: 'BookKeeping', 
-      hasDropdown: true, 
+    {
+      name: "BookKeeping",
+      hasDropdown: true,
       dropdownLinks: [
-        { name: 'Bookkeeping Overview', url: '#bookkeeping-option1' },
-        { name: 'Bookkeeping plans', url: '#bookkeeping-option2' },
-      ]
+        { name: "Bookkeeping Overview", url: "#bookkeeping-option1" },
+        { name: "Bookkeeping plans", url: "#bookkeeping-option2" },
+      ],
     },
-    { 
-      name: 'Tax Services', 
-      hasDropdown: true, 
+    {
+      name: "Tax Services",
+      hasDropdown: true,
       dropdownLinks: [
-        { name: 'Individual Tax Services', url: '#tax-services-option1' },
-        { name: 'Business Tax Services', url: '#tax-services-option2' },
-      ]
+        { name: "Individual Tax Services", url: "#tax-services-option1" },
+        { name: "Business Tax Services", url: "#tax-services-option2" },
+      ],
     },
-    { name: 'Business Managment', hasDropdown: false },
-    { 
-      name: 'Resources', 
-      hasDropdown: true, 
+    { name: "Business Managment", hasDropdown: false },
+    {
+      name: "Resources",
+      hasDropdown: true,
       dropdownLinks: [
-        { name: 'Finanacial Tools and Calculators', url: '#resources-option1' },
-      ]
-    }
-  ]
+        { name: "Finanacial Tools and Calculators", url: "#resources-option1" },
+      ],
+    },
+  ];
 
   const handleLinkClick = (linkName) => {
-    setActiveDropdown(activeDropdown === linkName ? null : linkName)  // Toggle dropdown visibility
-  }
+    setActiveDropdown(activeDropdown === linkName ? null : linkName); // Toggle dropdown visibility
+  };
 
   return (
     <header className="bg-white shadow-md fixed w-full z-[999]">
       <div className="max-w-7xl mx-auto px-4 py-3 relative flex justify-between items-center">
         <div className="flex-shrink-0">
-          <img src={logo} alt="Logo" className="w-16" />
+          <Link to="/">
+            <img src={logo} alt="Logo" className="w-16" />
+          </Link>
         </div>
 
         <nav className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 space-x-8 text-gray-600 font-medium">
@@ -62,19 +65,22 @@ const Header = () => {
                 className="hover:text-[#176FB9] transition-colors flex items-center text-sm"
                 onClick={() => link.hasDropdown && handleLinkClick(link.name)}
               >
-                {link.name} <ChevronDown size={16} className="inline-block ml-1" />
+                {link.name}{" "}
+                {link.hasDropdown && (
+                  <ChevronDown size={16} className="inline-block ml-1" />
+                )}
               </a>
 
               {link.hasDropdown && activeDropdown === link.name && (
                 <div className="absolute left-0 mt-2 space-y-7 pl-4 border border-gray-100 bg-gray-50 p-3 w-48 z-50">
-                  {link.dropdownLinks.map((dropdownLink, index) => (
-                    <a
-                      key={index}
-                      href={dropdownLink.url}
+                  {link.dropdownLinks.map((dropdownLink) => (
+                    <Link
+                      to={dropdownLink.url}
                       className="block text-gray-600 hover:text-[#176FB9]"
+                      onClick={() => setOpen(false)}
                     >
                       {dropdownLink.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               )}
@@ -99,7 +105,9 @@ const Header = () => {
       </div>
 
       <div
-        className={`fixed top-0 left-0 h-screen w-screen bg-white z-40 shadow-md transform transition-transform duration-300 ease-in-out ${open ? 'translate-x-0' : '-translate-x-full'} md:hidden`}
+        className={`fixed top-0 left-0 h-screen w-screen bg-white z-40 shadow-md transform transition-transform duration-300 ease-in-out ${
+          open ? "translate-x-0" : "-translate-x-full"
+        } md:hidden`}
       >
         <div className="px-4 py-4 flex justify-between items-center border-b">
           <span className="text-center">
@@ -117,20 +125,22 @@ const Header = () => {
                 className="hover:text-[#176FB9] transition-colors flex items-center"
                 onClick={() => link.hasDropdown && handleLinkClick(link.name)}
               >
-                {link.name} <ChevronDown size={16} className="inline-block ml-1" />
+                {link.name}{" "}
+                {link.hasDropdown && (
+                  <ChevronDown size={16} className="inline-block ml-1" />
+                )}
               </a>
 
               {link.hasDropdown && activeDropdown === link.name && (
                 <div className="mt-2 space-y-7 pl-4 border border-gray-100 bg-gray-50 p-3">
-                  {link.dropdownLinks.map((dropdownLink, index) => (
-                    <a
-                      key={index}
-                      href={dropdownLink.url}
+                  {link.dropdownLinks.map((dropdownLink) => (
+                    <Link
+                      to={dropdownLink.url}
                       className="block text-gray-600 hover:text-[#176FB9]"
-                      onClick={() => setOpen(false)} // Close the menu after clicking a dropdown link
+                      onClick={() => setOpen(false)}
                     >
                       {dropdownLink.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               )}
@@ -146,7 +156,7 @@ const Header = () => {
         />
       )}
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
