@@ -1,37 +1,37 @@
 import React, { useState } from "react";
 import Header from "../Header";
-import { realestate, realestate1 } from "../assets";
+import { entertainment, sound } from "../assets";
 import { ChevronDown } from "lucide-react";
 import Footer from "../Footer";
 
-const RealEstate = () => {
+const Entertainment = () => {
   const [openItem, setOpenItem] = useState(null);
 
   const accordionItems = [
     {
-      title: "Real Estate Expertise",
+      title: "Corporate Event Planning",
       content:
-        "Leverage our deep understanding of the real estate market to make informed investment decisions. From property evaluation to strategic planning, we guide you through every step of your real estate journey.",
+        "From conferences to galas, we specialize in crafting unforgettable corporate events that impress clients and energize teams.",
     },
     {
-      title: "Accurate Financial Tracking",
+      title: "Executive Entertainment",
       content:
-        "Gain clarity and control over your finances with real-time tracking, precise reporting, and tailored financial analysis. We ensure your records are always accurate and audit-ready.",
+        "Host high-end experiences for your top executives and VIPs with premium venues, fine dining, and tailored entertainment options.",
     },
     {
-      title: "Customized Solutions",
+      title: "Client Engagement Experiences",
       content:
-        "No two businesses are alike—our team designs solutions around your unique goals, challenges, and operations to drive measurable improvements and long-term success.",
+        "Strengthen client relationships through unique, curated experiences designed to build trust, loyalty, and long-term partnerships.",
     },
     {
-      title: "Timely Reporting",
+      title: "Team Building Activities",
       content:
-        "Make smarter decisions with up-to-date, accurate reporting delivered when you need it most. We ensure you’re always informed with clear, actionable insights.",
+        "Boost collaboration and morale with engaging activities that bring your team together in fun, meaningful ways—onsite or offsite.",
     },
     {
-      title: "Tax Preparedness",
+      title: "Branded Entertainment Solutions",
       content:
-        "Stay ahead of tax deadlines with proactive planning and compliance support. We help you prepare accurate documentation, minimize liabilities, and navigate complex tax regulations with confidence.",
+        "Integrate your brand into entertainment with custom activations, immersive media, and experiential marketing that leaves a lasting impression.",
     },
   ];
 
@@ -48,7 +48,7 @@ const RealEstate = () => {
       <div className="relative w-full">
         <div className="relative w-full">
           <img
-            src={realestate}
+            src={entertainment}
             alt="Header Background"
             className="w-full lg:h-auto h-96 max-h-[500px] object-cover z-0"
           />
@@ -58,7 +58,7 @@ const RealEstate = () => {
 
         <div className="absolute inset-0 flex items-center justify-center text-center z-20 p-4">
           <h1 className="text-2xl md:text-6xl font-bold text-white mt-28">
-            Bookkeeping Services <br className="" /> for Real Estate
+            For Entertainers
           </h1>
         </div>
       </div>
@@ -66,31 +66,27 @@ const RealEstate = () => {
       <div className="flex items-center justify-center mx-auto flex-col lg:flex-row gap-10 max-w-7xl lg:mt-24 mt-5 lg:p-0 p-5">
         <div>
           <h1 className="lg:text-4xl text-2xl font-medium">
-            Streamline Your Real Estate <br /> Finances with Expert <br />{" "}
+            Elevate Your Financial <br /> Management with Expert <br />{" "}
             Bookkeeping
           </h1>
           <p className="lg:text-lg mt-4 text-gray-600">
-            Welcome to AVS Consulting, where we specialize{" "}
-            <br className="lg:block hidden" /> in providing tailored bookkeeping
-            services specifically designed for{" "}
-            <br className="lg:block hidden" />
-            the real estate industry. Managing properties—whether residential,{" "}
-            <br className="lg:block hidden" />
-            commercial, or industrial—requires precise financial tracking and{" "}
-            <br className="lg:block hidden" />
-            expert handling of complex transactions. Our team is dedicated to{" "}
-            <br className="lg:block hidden" />
-            helping you maintain control over your financial landscape, ensuring{" "}
-            <br className="lg:block hidden" />
-            your business runs smoothly and efficiently.
+            AVS Consulting is your trusted partner, providing{" "}
+            <br className="lg:block hidden" /> specialized bookkeeping services
+            for the entertainment industry. <br className="lg:block hidden" />{" "}
+            The fast-paced nature of the entertainment world demands precise{" "}
+            <br className="lg:block hidden" /> financial oversight and an
+            understanding of the unique challenges you face.{" "}
+            <br className="lg:block hidden" /> Our team is here to help you
+            navigate your financial landscape, allowing you to focus on your
+            creative passions.
           </p>
         </div>
         <div>
-          <img src={realestate1} alt="" width={700} className="rounded-3xl" />
+          <img src={sound} alt="" width={700} className="rounded-3xl" />
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto lg:p-0 p-5">
+      <div className="max-w-7xl mx-auto lg:p-0 p-5 lg:mt-16 mt-5">
         <h1 className="lg:text-2xl font-medium">Why AVS Consulting</h1>
 
         <div className="mt-8 w-full max-w-7xl">
@@ -137,7 +133,7 @@ const RealEstate = () => {
         <h1 className="text-center font-bold lg:text-4xl text-2xl text-white">
           Get Started Today!
         </h1>
-        <p className="text-center mt-2 text-white">At AVS Consulting, we are committed to helping you achieve financial clarity and success in your real <br className="lg:block hidden"/> estate endeavors. Let us take the burden of bookkeeping off your shoulders so you can focus on what you do best—growing your business.</p>
+        <p className="text-center mt-2 text-white">At AVS Consulting, we’re committed to helping you thrive in the dynamic world of entertainment. <br className="lg:block hidden"/> Let us handle the numbers, so you can stay focused on producing your next big success!</p>
         <div className="justify-center text-center mt-7">
           <a
             href="#contact-us"
@@ -155,4 +151,4 @@ const RealEstate = () => {
   );
 };
 
-export default RealEstate;
+export default Entertainment;

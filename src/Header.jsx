@@ -14,8 +14,8 @@ const Header = () => {
       hasDropdown: true,
       dropdownLinks: [
         { name: "Real Estate", url: "/real-estate" },
-        { name: "Entertainers", url: "#industries-option2" },
-        { name: "Influencers", url: "#industries-option3" },
+        { name: "Entertainers", url: "/entertainment" },
+        { name: "Influencers", url: "/influencers" },
       ],
     },
     {
