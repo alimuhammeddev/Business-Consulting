@@ -75,6 +75,7 @@ const Header = () => {
                 <div className="absolute left-0 mt-2 space-y-7 pl-4 border border-gray-100 bg-gray-50 p-3 w-48 z-50">
                   {link.dropdownLinks.map((dropdownLink) => (
                     <Link
+                      key={dropdownLink.name}
                       to={dropdownLink.url}
                       className="block text-gray-600 hover:text-[#176FB9]"
                       onClick={() => setOpen(false)}
@@ -135,6 +136,7 @@ const Header = () => {
                 <div className="mt-2 space-y-7 pl-4 border border-gray-100 bg-gray-50 p-3">
                   {link.dropdownLinks.map((dropdownLink) => (
                     <Link
+                      key={dropdownLink.name}
                       to={dropdownLink.url}
                       className="block text-gray-600 hover:text-[#176FB9]"
                       onClick={() => setOpen(false)}
