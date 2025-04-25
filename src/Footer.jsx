@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-[#176fb9] text-white py-10 px-4">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* About Section */}
         <div>
           <h2 className="text-xl font-semibold mb-4">
@@ -40,7 +40,7 @@ const Footer = () => {
               placeholder="Your Email Address"
               className="w-full sm:w-auto px-4 py-2 rounded-md text-black mb-2 sm:mb-0 sm:mr-2"
             />
-            <button className="bg-gray-600 hover:bg-blue-700 px-4 py-2 rounded-md lg:w-fit w-full">
+            <button className="bg-gray-600 px-4 py-2 rounded-md lg:w-fit w-full">
               Subscribe
             </button>
           </form>
