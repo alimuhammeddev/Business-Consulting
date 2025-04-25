@@ -264,7 +264,7 @@ const Home = () => {
           <div className="justify-center text-center mt-10">
             <a
               href="#contact-us"
-              className="bg-gray-600 text-white px-10 py-3 rounded-full shadow-md transition-colors font-medium"
+              className="bg-gray-600 text-white px-7 py-3 rounded-full shadow-md transition-colors font-medium"
             >
               See Business Management Solutions
             </a>
