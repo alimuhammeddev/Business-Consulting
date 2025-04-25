@@ -7,6 +7,7 @@ import entertainment from './entertainment.jpg';
 import sound from './sound.jpg';
 import influencer from './influencer.jpg';
 import social from './social.jpg';
+import bookkeepingoverview from './bookkeepingoverview.jpg';
 
 export {
     logo,
@@ -18,4 +19,5 @@ export {
     sound,
     influencer,
     social,
+    bookkeepingoverview,
 }

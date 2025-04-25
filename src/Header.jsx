@@ -22,7 +22,7 @@ const Header = () => {
       name: "BookKeeping",
       hasDropdown: true,
       dropdownLinks: [
-        { name: "Bookkeeping Overview", url: "#bookkeeping-option1" },
+        { name: "Bookkeeping Overview", url: "/bookkeepingoverview" },
         { name: "Bookkeeping plans", url: "#bookkeeping-option2" },
       ],
     },
