@@ -7,6 +7,7 @@ import {
   BookOpen,
   ChevronDown,
 } from "lucide-react";
+import Footer from "../Footer";
 
 const Home = () => {
   const [openItem, setOpenItem] = useState(null);
@@ -59,7 +60,7 @@ const Home = () => {
           <h1 className="text-2xl md:text-6xl font-bold text-[#176FB9] mt-28">
             Small Business <br /> Reporting Solutions
             <p className="text-base md:text-2xl text-white font-normal lg:mt-5">
-              Entertainers, founders and entrepreneurs like you choose Business{" "}
+              Entertainers, founders and entrepreneurs like you choose AVS{" "}
               <br className="lg:block hidden" /> Consulting because we
               understand your world and the complexity of{" "}
               <br className="lg:block hidden" /> small business reporting in
@@ -90,7 +91,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="lg:p-28 p-7 flex lg:flex-row flex-col lg:justify-center gap-10">
+      <div className="lg:p-28 p-4 flex lg:flex-row flex-col lg:justify-center gap-10">
         <div>
           <img src={choose} alt="" className="rounded-3xl" />
         </div>
@@ -103,7 +104,7 @@ const Home = () => {
             <br className="lg:block hidden" /> Excellence
           </h2>
           <p className="text-gray-400">
-            At Business Consulting, we prioritize trust,{" "}
+            At AVS Consulting, we prioritize trust,{" "}
             <br className="lg:block hidden" /> transparency, and open
             communication, offering personalized{" "}
             <br className="lg:block hidden" /> attention and proactive support
@@ -120,9 +121,7 @@ const Home = () => {
                   className="flex justify-between items-center w-full p-4 text-left bg-white hover:bg-[#176fb9] hover:text-white focus:outline-none"
                   onClick={() => toggleAccordion(index)}
                 >
-                  <span className="font-medium">
-                    {item.title}
-                  </span>
+                  <span className="font-medium">{item.title}</span>
                   <ChevronDown
                     className={`transition-transform duration-300 ${
                       openItem === index ? "transform rotate-180" : ""
@@ -137,9 +136,7 @@ const Home = () => {
                       : "max-h-0 opacity-0"
                   }`}
                 >
-                  <div className="p-4 text-gray-600">
-                    {item.content}
-                  </div>
+                  <div className="p-4 text-gray-600">{item.content}</div>
                 </div>
               </div>
             ))}
@@ -147,16 +144,136 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-[#176FB9] w-full lg:p-20 p-10 mb-10">
-        <h1 className="text-center font-bold lg:text-4xl text-2xl text-white">Ready to Transform Your Business?</h1>
-        <div className="justify-center text-center mt-5">
+      <div className="bg-[#176FB9] w-full lg:p-16 p-10 mb-10">
+        <h1 className="text-center font-bold lg:text-4xl text-2xl text-white">
+          Ready to Transform Your Business?
+        </h1>
+        <div className="justify-center text-center mt-7">
           <a
             href="#contact-us"
-            className="bg-gray-700 text-white px-10 py-3 rounded-full shadow-md hover:bg-[#0f5b8c] transition-colors"
+            className="bg-white text-[#176fb9] px-10 py-3 rounded-full shadow-md transition-colors font-medium"
           >
             Contact Us
           </a>
         </div>
+      </div>
+
+      <div className="bg-gray-100 lg:p-20 p-5 -mt-10">
+        <div>
+          <h1 className="lg:text-4xl text-2xl font-semibold text-center mt-7">
+            The Proof Is in Our Clients' Words
+          </h1>
+          <p className="text-gray-600 lg:text-lg text-center">
+            Client testimonials speak volumes about our expertise,{" "}
+            <br className="lg:block hidden" /> dedication, and the results we
+            deliver
+          </p>
+        </div>
+
+        <div className="flex lg:flex-row flex-col justify-center mx-auto mt-5">
+          {/* Testimonial 1 */}
+          <div className="max-w-md mx-auto mt-5 p-6 bg-white rounded-2xl shadow-md text-center">
+            <div className="flex justify-center mb-4 text-3xl text-white bg-[#176fb9] rounded-full w-12 h-12 items-center mx-auto">
+              <span>&ldquo;</span>
+            </div>
+            <p className="text-gray-700 text-base leading-relaxed mb-4">
+              Working with this team was a game-changer for our business. Their
+              dedication, attention to detail, and innovative approach helped us
+              reach our goals faster than expected.
+            </p>
+            <div className="flex justify-center text-yellow-500 text-xl space-x-1 mb-2">
+              <span>&#9733;</span>
+              <span>&#9733;</span>
+              <span>&#9733;</span>
+              <span>&#9733;</span>
+              <span>&#9734;</span>
+            </div>
+            <div className="mt-2">
+              <h3 className="font-semibold">Jane Doe</h3>
+              <p className="text-sm text-gray-500">CEO, BrightTech</p>
+            </div>
+          </div>
+
+          {/* Testimonial 2 */}
+          <div className="max-w-md mx-auto mt-5 p-6 bg-white rounded-2xl shadow-md text-center">
+            <div className="flex justify-center mb-4 text-3xl text-white bg-[#176fb9] rounded-full w-12 h-12 items-center mx-auto">
+              <span>&ldquo;</span>
+            </div>
+            <p className="text-gray-700 text-base leading-relaxed mb-4">
+              The service was exceptional from start to finish. They took the
+              time to understand our vision and delivered beyond our
+              expectations.
+            </p>
+            <div className="flex justify-center text-yellow-500 text-xl space-x-1 mb-2">
+              <span>&#9733;</span>
+              <span>&#9733;</span>
+              <span>&#9733;</span>
+              <span>&#9733;</span>
+              <span>&#9733;</span>
+            </div>
+            <div className="mt-2">
+              <h3 className="font-semibold">John Smith</h3>
+              <p className="text-sm text-gray-500">Founder, CreativeCore</p>
+            </div>
+          </div>
+
+          {/* Testimonial 3 */}
+          <div className="max-w-md mx-auto mt-5 p-6 bg-white rounded-2xl shadow-md text-center">
+            <div className="flex justify-center mb-4 text-3xl text-white bg-[#176fb9] rounded-full w-12 h-12 items-center mx-auto">
+              <span>&ldquo;</span>
+            </div>
+            <p className="text-gray-700 text-base leading-relaxed mb-4">
+              Their professionalism and dedication stood out. The team brought
+              our project to life with creativity and precision.
+            </p>
+            <div className="flex justify-center text-yellow-500 text-xl space-x-1 mb-2">
+              <span>&#9733;</span>
+              <span>&#9733;</span>
+              <span>&#9733;</span>
+              <span>&#9734;</span>
+              <span>&#9734;</span>
+            </div>
+            <div className="mt-2">
+              <h3 className="font-semibold">Sarah Lee</h3>
+              <p className="text-sm text-gray-500">
+                Marketing Manager, NovaEdge
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="lg:p-10 p-5">
+        <div>
+          <h1 className="text-center lg:text-4xl text-xl font-semibold">
+            Financial Wellness Resources & Tools
+          </h1>
+          <p className="text-gray-600 lg:text-lg text-center">
+            We’ve gathered up a handful of calculators and tools you can use as{" "}
+            <br className="lg:block hidden" /> a starting point for your budget,
+            return on investments and more.
+          </p>
+          <div className="justify-center text-center mt-10">
+            <a
+              href="#contact-us"
+              className="bg-[#176fb9] text-white px-12 py-3 rounded-full shadow-md transition-colors font-medium"
+            >
+              View Tools
+            </a>
+          </div>
+          <div className="justify-center text-center mt-10">
+            <a
+              href="#contact-us"
+              className="bg-gray-600 text-white px-12 py-3 rounded-full shadow-md transition-colors font-medium"
+            >
+              See Business Management Solutions
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <Footer />
       </div>
     </section>
   );
