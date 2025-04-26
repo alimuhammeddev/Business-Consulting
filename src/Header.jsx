@@ -34,7 +34,11 @@ const Header = () => {
         { name: "Business Tax Services", url: "/business-tax" },
       ],
     },
-    { name: "Business Managment", hasDropdown: false },
+    {
+      name: "Business Managment",
+      hasDropdown: false,
+      url: "/business-management",
+    },
     {
       name: "Resources",
       hasDropdown: true,
@@ -60,16 +64,24 @@ const Header = () => {
         <nav className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 space-x-8 text-gray-600 font-medium">
           {navLinks.map((link, i) => (
             <div key={i} className="relative">
-              <a
-                href={`#${link.name.toLowerCase()}`}
-                className="hover:text-[#176FB9] transition-colors flex items-center text-sm"
-                onClick={() => link.hasDropdown && handleLinkClick(link.name)}
-              >
-                {link.name}{" "}
-                {link.hasDropdown && (
+              {link.hasDropdown ? (
+                <a
+                  href={`#${link.name.toLowerCase()}`}
+                  className="hover:text-[#176FB9] transition-colors flex items-center text-sm"
+                  onClick={() => handleLinkClick(link.name)}
+                >
+                  {link.name}
                   <ChevronDown size={16} className="inline-block ml-1" />
-                )}
-              </a>
+                </a>
+              ) : (
+                <Link
+                  to={link.url}
+                  className="hover:text-[#176FB9] transition-colors flex items-center text-sm"
+                  onClick={() => setOpen(false)}
+                >
+                  {link.name}
+                </Link>
+              )}
 
               {link.hasDropdown && activeDropdown === link.name && (
                 <div className="absolute left-0 mt-2 space-y-7 pl-4 border border-gray-100 bg-gray-50 p-3 w-48 z-50">
@@ -123,16 +135,24 @@ const Header = () => {
         <nav className="flex flex-col px-6 py-6 space-y-6 text-lg text-gray-600 font-medium">
           {navLinks.map((link, i) => (
             <div key={i}>
-              <a
-                href={`#${link.name.toLowerCase()}`}
-                className="hover:text-[#176FB9] transition-colors flex items-center"
-                onClick={() => link.hasDropdown && handleLinkClick(link.name)}
-              >
-                {link.name}{" "}
-                {link.hasDropdown && (
+              {link.hasDropdown ? (
+                <a
+                  href={`#${link.name.toLowerCase()}`}
+                  className="hover:text-[#176FB9] transition-colors flex items-center text-sm"
+                  onClick={() => handleLinkClick(link.name)}
+                >
+                  {link.name}
                   <ChevronDown size={16} className="inline-block ml-1" />
-                )}
-              </a>
+                </a>
+              ) : (
+                <Link
+                  to={link.url}
+                  className="hover:text-[#176FB9] transition-colors flex items-center text-sm"
+                  onClick={() => setOpen(false)}
+                >
+                  {link.name}
+                </Link>
+              )}
 
               {link.hasDropdown && activeDropdown === link.name && (
                 <div className="mt-2 space-y-7 pl-4 border border-gray-100 bg-gray-50 p-3">

@@ -15,6 +15,10 @@ import book3 from './book3.jpg';
 import individualtax from './individualtax.jpg';
 import businesstax from './businesstax.jpg';
 import business1 from './business1.jpg';
+import business2 from './business2.jpg';
+import business3 from './business3.jpg';
+import businessmanagement from './businessmanagement.jpg';
+import businessmgt from './businessmgt.jpg';
 
 export {
     logo,
@@ -34,4 +38,8 @@ export {
     individualtax,
     businesstax,
     business1,
+    business2,
+    business3,
+    businessmanagement,
+    businessmgt,
 }

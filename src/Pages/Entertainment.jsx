@@ -3,6 +3,7 @@ import Header from "../Header";
 import { entertainment, sound } from "../assets";
 import { ChevronDown } from "lucide-react";
 import Footer from "../Footer";
+import { Link } from "react-router-dom";
 
 const Entertainment = () => {
   const [openItem, setOpenItem] = useState(null);
@@ -117,12 +118,12 @@ const Entertainment = () => {
           ))}
         </div>
         <div className="justify-center text-center mt-10">
-          <a
-            href="#contact-us"
+          <Link
+            to="/bookkeeping-plans"
             className="bg-[#176fb9] text-white px-7 py-3 rounded-full shadow-md transition-colors font-medium"
           >
             View Our Bookkeeping Plans
-          </a>
+          </Link>
         </div>
       </div>
 
