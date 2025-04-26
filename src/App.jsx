@@ -5,6 +5,8 @@ import Entertainment from './Pages/Entertainment'
 import Influencers from './Pages/Influencers'
 import BookkeepingOverview from './Pages/BookkeepingOverview'
 import BookkeepingPlans from './Pages/BookkeepingPlans'
+import IndividualTax from './Pages/IndividualTax'
+import BusinessTax from './Pages/BusinessTax'
 
 function App() {
   return (
@@ -13,8 +15,10 @@ function App() {
       <Route path="/real-estate" element={<RealEstate />} />
       <Route path="/entertainment" element={<Entertainment />} />
       <Route path="/influencers" element={<Influencers />} />
-      <Route path="/bookkeepingoverview" element={<BookkeepingOverview />} />
-      <Route path="/bookkeepingplans" element={<BookkeepingPlans />} />
+      <Route path="/bookkeeping-overview" element={<BookkeepingOverview />} />
+      <Route path="/bookkeeping-plans" element={<BookkeepingPlans />} />
+      <Route path="/individual-tax" element={<IndividualTax />} />
+      <Route path="/business-tax" element={<BusinessTax />} />
     </Routes>
   )
 }

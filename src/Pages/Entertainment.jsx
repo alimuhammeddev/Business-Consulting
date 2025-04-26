@@ -69,14 +69,11 @@ const Entertainment = () => {
             Elevate Your Financial <br /> Management with Expert <br />{" "}
             Bookkeeping
           </h1>
-          <p className="lg:text-lg mt-4 text-gray-600">
-            AVS Consulting is your trusted partner, providing{" "}
-            <br className="lg:block hidden" /> specialized bookkeeping services
-            for the entertainment industry. <br className="lg:block hidden" />{" "}
-            The fast-paced nature of the entertainment world demands precise{" "}
-            <br className="lg:block hidden" /> financial oversight and an
-            understanding of the unique challenges you face.{" "}
-            <br className="lg:block hidden" /> Our team is here to help you
+          <p className="lg:text-lg mt-4 text-gray-600 max-w-prose">
+            AVS Consulting is your trusted partner, providing specialized bookkeeping services
+            for the entertainment industry.
+            The fast-paced nature of the entertainment world demands precise financial oversight and an
+            understanding of the unique challenges you face. Our team is here to help you
             navigate your financial landscape, allowing you to focus on your
             creative passions.
           </p>

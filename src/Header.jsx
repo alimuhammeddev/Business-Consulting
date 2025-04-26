@@ -22,16 +22,16 @@ const Header = () => {
       name: "BookKeeping",
       hasDropdown: true,
       dropdownLinks: [
-        { name: "Bookkeeping Overview", url: "/bookkeepingoverview" },
-        { name: "Bookkeeping plans", url: "/bookkeepingplans" },
+        { name: "Bookkeeping Overview", url: "/bookkeeping-overview" },
+        { name: "Bookkeeping plans", url: "/bookkeeping-plans" },
       ],
     },
     {
       name: "Tax Services",
       hasDropdown: true,
       dropdownLinks: [
-        { name: "Individual Tax Services", url: "#tax-services-option1" },
-        { name: "Business Tax Services", url: "#tax-services-option2" },
+        { name: "Individual Tax Services", url: "/individual-tax" },
+        { name: "Business Tax Services", url: "/business-tax" },
       ],
     },
     { name: "Business Managment", hasDropdown: false },

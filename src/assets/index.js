@@ -12,6 +12,9 @@ import bookkeepingplans from './bookkeepingplans.jpg';
 import book1 from './book1.jpg';
 import book2 from './book2.jpg';
 import book3 from './book3.jpg';
+import individualtax from './individualtax.jpg';
+import businesstax from './businesstax.jpg';
+import business1 from './business1.jpg';
 
 export {
     logo,
@@ -28,4 +31,7 @@ export {
     book1,
     book2,
     book3,
+    individualtax,
+    businesstax,
+    business1,
 }

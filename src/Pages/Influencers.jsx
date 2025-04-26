@@ -67,15 +67,12 @@ const Influencers = () => {
           <h1 className="lg:text-4xl text-2xl font-medium">
             Elevate Your Influence with <br /> Expert Bookkeeping
           </h1>
-          <p className="lg:text-lg mt-4 text-gray-600">
+          <p className="lg:text-lg mt-4 text-gray-600 max-w-prose">
             AVS Consulting is your trusted partner, providing specialized
-            bookkeeping <br className="lg:block hidden" /> services for
-            influencers, brand ambassadors and other free thinkers. The{" "}
-            <br className="lg:block hidden" /> fast-paced world of social media
-            demands precise financial oversight and{" "}
-            <br className="lg:block hidden" /> an understanding of the unique
-            challenges you face. Our team is here to{" "}
-            <br className="lg:block hidden" /> help you navigate your financial
+            bookkeeping services for
+            influencers, brand ambassadors and other free thinkers. The fast-paced world of social media
+            demands precise financial oversight and an understanding of the unique
+            challenges you face. Our team is here to help you navigate your financial
             landscape, allowing you to focus on your creativity.
           </p>
         </div>
