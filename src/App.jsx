@@ -4,6 +4,7 @@ import Home from './Pages/Home'
 import Entertainment from './Pages/Entertainment'
 import Influencers from './Pages/Influencers'
 import BookkeepingOverview from './Pages/BookkeepingOverview'
+import BookkeepingPlans from './Pages/BookkeepingPlans'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path="/entertainment" element={<Entertainment />} />
       <Route path="/influencers" element={<Influencers />} />
       <Route path="/bookkeepingoverview" element={<BookkeepingOverview />} />
+      <Route path="/bookkeepingplans" element={<BookkeepingPlans />} />
     </Routes>
   )
 }

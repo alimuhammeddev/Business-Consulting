@@ -23,7 +23,7 @@ const Header = () => {
       hasDropdown: true,
       dropdownLinks: [
         { name: "Bookkeeping Overview", url: "/bookkeepingoverview" },
-        { name: "Bookkeeping plans", url: "#bookkeeping-option2" },
+        { name: "Bookkeeping plans", url: "/bookkeepingplans" },
       ],
     },
     {
@@ -112,7 +112,9 @@ const Header = () => {
       >
         <div className="px-4 py-4 flex justify-between items-center border-b">
           <span className="text-center">
-            <img src={logo} alt="Logo" className="w-16" />
+            <Link to="/">
+              <img src={logo} alt="Logo" className="w-16" />
+            </Link>
           </span>
           <button onClick={toggleMenu}>
             <X size={24} className="text-gray-700" />

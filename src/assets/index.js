@@ -8,6 +8,10 @@ import sound from './sound.jpg';
 import influencer from './influencer.jpg';
 import social from './social.jpg';
 import bookkeepingoverview from './bookkeepingoverview.jpg';
+import bookkeepingplans from './bookkeepingplans.jpg';
+import book1 from './book1.jpg';
+import book2 from './book2.jpg';
+import book3 from './book3.jpg';
 
 export {
     logo,
@@ -20,4 +24,8 @@ export {
     influencer,
     social,
     bookkeepingoverview,
+    bookkeepingplans,
+    book1,
+    book2,
+    book3,
 }
