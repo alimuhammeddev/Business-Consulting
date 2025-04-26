@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../Header";
 import { business1, individualtax } from "../assets";
 import Footer from "../Footer";
+import { Link } from "react-router-dom";
 
 const IndividualTax = () => {
   return (
@@ -86,12 +87,12 @@ const IndividualTax = () => {
       </div>
 
       <div className="justify-center text-center mt-16 mb-16">
-        <a
-          href="#contact-us"
+        <Link to="/business-tax"
+
           className="bg-[#176fb9] text-white px-7 py-3 rounded-full shadow-md transition-colors font-medium"
         >
           See Business Tax Services
-        </a>
+        </Link>
       </div>
 
       <div>
