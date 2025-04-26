@@ -8,6 +8,7 @@ import BookkeepingPlans from './Pages/BookkeepingPlans'
 import IndividualTax from './Pages/IndividualTax'
 import BusinessTax from './Pages/BusinessTax'
 import BusinessManagement from './Pages/BusinessManagement'
+import FinancialTools from './Pages/FinancialTools'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Route path="/individual-tax" element={<IndividualTax />} />
       <Route path="/business-tax" element={<BusinessTax />} />
       <Route path="/business-management" element={<BusinessManagement />} />
+      <Route path="/financial-tools" element={<FinancialTools />} />
     </Routes>
   )
 }

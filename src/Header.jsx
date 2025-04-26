@@ -43,7 +43,7 @@ const Header = () => {
       name: "Resources",
       hasDropdown: true,
       dropdownLinks: [
-        { name: "Finanacial Tools and Calculators", url: "#resources-option1" },
+        { name: "Finanacial Tools and Calculators", url: "/financial-tools" },
       ],
     },
   ];

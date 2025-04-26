@@ -19,6 +19,9 @@ import business2 from './business2.jpg';
 import business3 from './business3.jpg';
 import businessmanagement from './businessmanagement.jpg';
 import businessmgt from './businessmgt.jpg';
+import financialtools from './financialtools.jpg';
+import finance from './finance.jpg';
+import budgetplanning from './budgetplanning.jpg';
 
 export {
     logo,
@@ -42,4 +45,7 @@ export {
     business3,
     businessmanagement,
     businessmgt,
+    financialtools,
+    finance,
+    budgetplanning,
 }
