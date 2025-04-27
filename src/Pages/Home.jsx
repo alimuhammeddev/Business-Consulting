@@ -65,7 +65,7 @@ const Home = () => {
               <br className="lg:block hidden" /> Consulting because we
               understand your world and the complexity of{" "}
               <br className="lg:block hidden" /> small business reporting in
-              Ohio California. This is where knowledge meets{" "}
+              Ohio and California. This is where knowledge meets{" "}
               <br className="lg:block hidden" /> convenience to drive business
               goals while mitigating your risk.
             </p>
