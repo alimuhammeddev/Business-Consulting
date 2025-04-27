@@ -22,6 +22,7 @@ import businessmgt from './businessmgt.jpg';
 import financialtools from './financialtools.jpg';
 import finance from './finance.jpg';
 import budgetplanning from './budgetplanning.jpg';
+import contactus from './contactus.jpg';
 
 export {
     logo,
@@ -48,4 +49,5 @@ export {
     financialtools,
     finance,
     budgetplanning,
+    contactus,
 }

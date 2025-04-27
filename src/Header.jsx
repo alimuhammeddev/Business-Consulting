@@ -102,12 +102,12 @@ const Header = () => {
         </nav>
 
         <div className="hidden md:flex ml-8">
-          <a
-            href="#contact-us"
+          <Link
+            to="/contact-us"
             className="bg-[#176FB9] text-white text-sm px-6 py-2 rounded-lg shadow-md hover:bg-[#0f5b8c] transition-colors"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
 
         <div className="md:hidden">

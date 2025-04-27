@@ -8,6 +8,7 @@ import {
   ChevronDown,
 } from "lucide-react";
 import Footer from "../Footer";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [openItem, setOpenItem] = useState(null);
@@ -63,8 +64,8 @@ const Home = () => {
               Entertainers, founders and entrepreneurs like you choose AVS{" "}
               <br className="lg:block hidden" /> Consulting because we
               understand your world and the complexity of{" "}
-              <br className="lg:block hidden" /> small business reporting in Ohio
-              California. This is where knowledge meets{" "}
+              <br className="lg:block hidden" /> small business reporting in
+              Ohio California. This is where knowledge meets{" "}
               <br className="lg:block hidden" /> convenience to drive business
               goals while mitigating your risk.
             </p>
@@ -149,12 +150,12 @@ const Home = () => {
           Ready to Transform Your Business?
         </h1>
         <div className="justify-center text-center mt-7">
-          <a
-            href="#contact-us"
+          <Link
+            to="/contact-us"
             className="bg-white text-[#176fb9] px-10 py-3 rounded-full shadow-md transition-colors font-medium"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -254,20 +255,20 @@ const Home = () => {
             return on investments and more.
           </p>
           <div className="justify-center text-center mt-10">
-            <a
-              href="#contact-us"
+            <Link
+              to="/financial-tools"
               className="bg-[#176fb9] text-white px-12 py-3 rounded-full shadow-md transition-colors font-medium"
             >
               View Tools
-            </a>
+            </Link>
           </div>
           <div className="justify-center text-center mt-10">
-            <a
-              href="#contact-us"
+            <Link
+              to="/business-management"
               className="bg-gray-600 text-white px-7 py-3 rounded-full shadow-md transition-colors font-medium"
             >
               See Business Management Solutions
-            </a>
+            </Link>
           </div>
         </div>
       </div>

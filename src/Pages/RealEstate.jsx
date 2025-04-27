@@ -139,12 +139,12 @@ const RealEstate = () => {
           shoulders so you can focus on what you do best—growing your business.
         </p>
         <div className="justify-center text-center mt-7">
-          <a
-            href="#contact-us"
+          <Link
+            to="/contact-us"
             className="bg-white text-[#176fb9] px-10 py-3 rounded-full shadow-md transition-colors font-medium"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
       </div>
 

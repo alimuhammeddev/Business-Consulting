@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../Header";
 import { budgetplanning, finance, financialtools } from "../assets";
 import Footer from "../Footer";
+import { Link } from "react-router-dom";
 
 const FinancialTools = () => {
   return (
@@ -52,12 +53,12 @@ const FinancialTools = () => {
       </div>
 
       <div className="justify-center text-center lg:mt-24 mt-10">
-        <a
-          href="#contact-us"
+        <Link
+          to="/contact-us"
           className="bg-[#176fb9] text-white px-10 py-3 rounded-full shadow-md transition-colors font-medium"
         >
           Contact Us
-        </a>
+        </Link>
       </div>
 
       <div className="flex items-center justify-center mx-auto flex-col lg:flex-row gap-10 max-w-7xl lg:mt-24 mt-5 lg:p-0 p-5">
@@ -213,12 +214,12 @@ const FinancialTools = () => {
       </div>
 
       <div className="justify-center text-center lg:mt-10 mt-7 lg:mb-20 mb-10">
-        <a
-          href="#contact-us"
+        <Link
+          to="/contact-us"
           className="bg-[#176fb9] text-white px-10 py-3 rounded-full shadow-md transition-colors font-medium"
         >
           Contact Us
-        </a>
+        </Link>
       </div>
 
       <div>

@@ -9,6 +9,7 @@ import IndividualTax from './Pages/IndividualTax'
 import BusinessTax from './Pages/BusinessTax'
 import BusinessManagement from './Pages/BusinessManagement'
 import FinancialTools from './Pages/FinancialTools'
+import Contact from './Pages/Contact'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Route path="/business-tax" element={<BusinessTax />} />
       <Route path="/business-management" element={<BusinessManagement />} />
       <Route path="/financial-tools" element={<FinancialTools />} />
+      <Route path="/contact-us" element={<Contact />} />
     </Routes>
   )
 }

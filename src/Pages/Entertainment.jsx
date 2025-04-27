@@ -133,12 +133,12 @@ const Entertainment = () => {
         </h1>
         <p className="text-center mt-2 text-white">At AVS Consulting, we’re committed to helping you thrive in the dynamic world of entertainment. <br className="lg:block hidden"/> Let us handle the numbers, so you can stay focused on producing your next big success!</p>
         <div className="justify-center text-center mt-7">
-          <a
-            href="#contact-us"
+          <Link
+            to="/contact-us"
             className="bg-white text-[#176fb9] px-10 py-3 rounded-full shadow-md transition-colors font-medium"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
       </div>
 
