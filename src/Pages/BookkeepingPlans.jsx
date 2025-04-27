@@ -54,7 +54,7 @@ const BookkeepingPlans = () => {
                 className="h-64 w-full object-cover sm:h-80 lg:h-96"
               />
 
-              <div className="bg-white p-4 w-full h-44">
+              <div className="bg-white p-4 w-full lg:h-44 h-52">
                 <h3 className="text-lg font-bold text-gray-900 sm:text-xl">
                   Monthly Bookkeeping
                 </h3>
