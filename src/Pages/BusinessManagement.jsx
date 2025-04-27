@@ -131,7 +131,7 @@ const BusinessManagement = () => {
 
       <div className="bg-gray-500 w-full lg:p-16 p-10 mt-16">
         <h1 className="text-center lg:text-xl text-base text-white">
-        Our commitment to transparency means you'll always have a clear understanding of our <br /> processes, recommendations, and the steps we take to help your business succeed.
+        Our commitment to transparency means you'll always have a clear understanding of our <br className="lg:block hidden"/> processes, recommendations, and the steps we take to help your business succeed.
         </h1>
         <div className="justify-center text-center mt-7">
           <Link
