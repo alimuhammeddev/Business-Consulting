@@ -138,7 +138,7 @@ const Header = () => {
               {link.hasDropdown ? (
                 <a
                   href={`#${link.name.toLowerCase()}`}
-                  className="hover:text-[#176FB9] transition-colors flex items-center text-sm"
+                  className="hover:text-[#176FB9] transition-colors flex items-center text-base"
                   onClick={() => handleLinkClick(link.name)}
                 >
                   {link.name}
@@ -147,7 +147,7 @@ const Header = () => {
               ) : (
                 <Link
                   to={link.url}
-                  className="hover:text-[#176FB9] transition-colors flex items-center text-sm"
+                  className="hover:text-[#176FB9] transition-colors flex items-center text-base"
                   onClick={() => setOpen(false)}
                 >
                   {link.name}
@@ -160,7 +160,7 @@ const Header = () => {
                     <Link
                       key={dropdownLink.name}
                       to={dropdownLink.url}
-                      className="block text-gray-600 hover:text-[#176FB9]"
+                      className="block text-gray-600 hover:text-[#176FB9] text-base"
                       onClick={() => setOpen(false)}
                     >
                       {dropdownLink.name}
