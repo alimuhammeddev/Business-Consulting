@@ -115,7 +115,7 @@ const BookkeepingPlans = () => {
         </div>
       </div>
 
-      <div className="bg-gray-500 p-10">
+      <div className="bg-gray-500 lg:p-10 p-5">
         <h1 className="text-white text-2xl font-medium text-center mb-6">
           Contact Us For More Information
         </h1>
