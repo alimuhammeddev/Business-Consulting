@@ -50,7 +50,7 @@ const Footer = () => {
         <div>
           <h2 className="text-xl font-semibold mb-4">Contact Us</h2>
           <p className="text-white mb-2">567 425 7730</p>
-          <p className="text-white mb-2">avsconsulting@gmail.com</p>
+          <p className="text-white mb-2">info@avsbconsulting.com</p>
           <p className="text-white">
             815 Superior Ave. East Cleveland, OH 44114
           </p>
@@ -58,7 +58,7 @@ const Footer = () => {
       </div>
 
       <div className="border-t border-white mt-8 pt-6 text-center text-white text-sm">
-        © 2018 Business Consulting. All rights reserved.
+        © 2018 AVS Consulting. All rights reserved.
       </div>
     </footer>
   );
